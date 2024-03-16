@@ -1,0 +1,20 @@
+.loader-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vw;
+    background-color: var(--black);
+    color: var(--blue);
+    position: fixed;
+    z-index: 1000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+.loader-conatiner {
+    height: 70vw;
+}
+
+}
