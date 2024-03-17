@@ -39,6 +39,7 @@
     gap: 1.5rem;
     align-items: center;
     margin-top: 2rem;
+    padding-bottom: 10rem;
 }
 
 .phone-container {
@@ -51,16 +52,16 @@
 .iphone {
     position: absolute;
     z-index: 100;
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 200px;
+    max-width: 250px;
     width: 50%;
     right:0
 }
 
 .gradient {
     position: absolute;
-    min-width: 200px;
-    max-width: 250px;
+    min-width: 150px;
+    max-width: 200px;
     width: 40%;
     top: 8rem;
     right:0;
@@ -96,6 +97,7 @@
         display: block;
         margin: auto;
         margin-top: 5rem;
+        padding-bottom: 30rem;
     }
     .iphone {
         left:-2rem;
@@ -125,5 +127,6 @@
 
     .btn-flex {
         justify-content: center;
+        
     }
   }

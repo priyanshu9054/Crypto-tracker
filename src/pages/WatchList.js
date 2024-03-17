@@ -44,6 +44,7 @@ function WatchlistPage() {
           </div>
         </div>
       )}
+      
     </div>
   );
 }

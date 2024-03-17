@@ -5,6 +5,13 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     margin: 1.5rem 3rem;
+    background-color: var(--black);
+}
+
+.theme,
+.context,
+.tablist {
+    background-color: var(--black);
 }
 
 .list-table {
@@ -12,6 +19,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--black);
+
 }
 
 @media only screen and (max-width: 1000px) {

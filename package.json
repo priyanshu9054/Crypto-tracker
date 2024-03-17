@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
+    "babel-preset-react-app": "^10.0.1",
     "chart.js": "^4.4.2",
     "digital": "^0.0.1",
     "enlist": "^0.1.0",
@@ -23,8 +24,8 @@
     "react-toastify": "^10.0.5",
     "routines": "^0.3.0",
     "script": "^0.0.12",
+    "toastify": "^2.0.1",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.90.3",
     "yarn": "^1.22.21"
   },
   "scripts": {

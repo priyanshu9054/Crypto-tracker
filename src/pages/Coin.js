@@ -12,6 +12,7 @@ import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";
 import { settingChartData } from "../functions/settingChartData";
 import { settingCoinObject } from "../functions/settingCoinObject";
+import Footer from "../components/Common/Footer";
 
 function Coin() {
   const { id } = useParams();
@@ -79,6 +80,7 @@ function Coin() {
             <LineChart chartData={chartData} />
           </div>
           <Info heading={coin.name} desc={coin.desc} />
+          <Footer />
         </>
       ) : error ? (
         <div>

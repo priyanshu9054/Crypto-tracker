@@ -5,7 +5,12 @@ import iphone from "../../../assets/iphone.png";
 import gradient from "../../../assets/gradient.png";
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
+import { RWebShare } from "react-web-share";
+import { toast } from "react-toastify";
+    
+
 function MainComponent() {
+
   return (
     <div className='flex-info'>
         <div className='left-component'>
@@ -41,8 +46,10 @@ function MainComponent() {
                 <Link to="/dashboard">
                 <Button text={"Dashboard"} />
                 </Link>
-                <Button text={"Share"} outlined={true} />
-            </motion.div> 
+               
+            <Button text={"Share App"} outlined={true} />
+          
+          </motion.div> 
         </div>
         <div className='phone-container'>
             <motion.img 
@@ -64,4 +71,4 @@ function MainComponent() {
   );
 }
 
-export default MainComponent
+export default MainComponent;
