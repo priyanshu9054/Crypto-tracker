@@ -5,8 +5,7 @@ import iphone from "../../../assets/iphone.png";
 import gradient from "../../../assets/gradient.png";
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
-import { RWebShare } from "react-web-share";
-import { toast } from "react-toastify";
+
     
 
 function MainComponent() {
