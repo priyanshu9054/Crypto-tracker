@@ -1,14 +1,45 @@
 import * as React from 'react';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import { IconButton } from '@mui/material';
+import { IconButton, Switch } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { toast } from "react-toastify";
 
 export default function AnchorTemporaryDrawer() {
   const [open, setOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") == "dark" ? true : false
+  );
 
+  useEffect(() => {
+    if (localStorage.getItem("theme") == "dark") {
+      setDark();
+    } else {
+      setLight();
+    }
+  }, []);
+
+  const changeMode = () => {
+    if (localStorage.getItem("theme") != "dark") {
+      setDark();
+    } else {
+      setLight();
+    }
+    setDarkMode(!darkMode);
+    toast.success("Theme Changed!");
+  };
+
+  const setDark = () => {
+    localStorage.setItem("theme", "dark");
+    document.documentElement.setAttribute("data-theme", "dark");
+  };
+
+  const setLight = () => {
+    localStorage.setItem("theme", "light");
+    document.documentElement.setAttribute("data-theme", "light");
+  };
  
   return (
     <div>
@@ -33,6 +64,7 @@ export default function AnchorTemporaryDrawer() {
             <Link to='/dashboard'>
                 <p className='link'>Dashboard</p>
             </Link>
+            <Switch checked={darkMode} onClick={() => changeMode()} />
             </div>
           </Drawer>
     </div>

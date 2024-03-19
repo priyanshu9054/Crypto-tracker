@@ -32,8 +32,8 @@ function List({coin}) {
           </Tooltip>
           <Tooltip title="Price Change in 24Hrs" placement="bottom-start">
           {coin.price_change_percentage_24h > 0 ? (
-            <td className='chip-flex'>
-                <div className='price-chip'>
+            <td className='chip-flex-ls'>
+                <div className='price-chip-ls'>
                     {coin.price_change_percentage_24h.toFixed(2)}%
                 </div>
                 <div className='icon-chip td-icon'> 
@@ -42,8 +42,8 @@ function List({coin}) {
           </td>
           ) : (
             
-            <td className='chip-flex'>
-                <div className='price-chip chip-red'>
+            <td className='chip-flex-ls'>
+                <div className='price-chip-ls chip-red'>
                     {coin.price_change_percentage_24h.toFixed(2)}%
                 </div>
                 <div className='icon-chip chip-red td-icon'>
