@@ -50,7 +50,7 @@ function MainComponent() {
                 <RWebShare
             data={{
               text: "Crypto-Tracker made by Priyanshu using React JS.",
-              url: "https://65f9ed039690680008fbe306--priyanshu-crypto-tracker.netlify.app/",
+              url: "https://65fab4e3a59bca00074027a3--priyanshu-crypto-tracker.netlify.app/",
               title: "CryptoTracker.",
             }}
             onClick={() => toast.info("App Shared!")}
