@@ -19,14 +19,14 @@ function List({coin}) {
     <tr className="list-row">
         <Tooltip title="Coin Logo">
         <td className='td-image'>
-            <img src={coin.image} className="coin-logo" />
+            <img src={coin.image} className="coin-logo-ls" />
             </td>
             </Tooltip>
             <Tooltip title="Coin Info" placement="bottom-start">
             <td>
             <div className='name-col'>
-                <p className="coin-symbol">{coin.symbol}</p>
-                <p className='coin-name'>{coin.name}</p>
+                <p className="coin-symbol-ls">{coin.symbol}</p>
+                <p className='coin-name-ls'>{coin.name}</p>
             </div>
           </td>
           </Tooltip>
@@ -54,7 +54,7 @@ function List({coin}) {
         </Tooltip>
         <Tooltip title="Current Price">
           <td>
-          <h3 className='coin-price td-center-align' 
+          <h3 className='coin-price-ls td-center-align' 
           style={{
               color:
               coin.price_change_percentage_24h < 0
@@ -88,8 +88,8 @@ function List({coin}) {
           </td>
           </Tooltip>
           <td
-          className={`watchlist-icon ${
-            coin.price_change_percentage_24h < 0 && "watchlist-icon-red"
+          className={`watchlist-icon-ls ${
+            coin.price_change_percentage_24h < 0 && "watchlist-icon-ls-red"
           }`}
           onClick={(e) => {
             if (isCoinAdded) {
